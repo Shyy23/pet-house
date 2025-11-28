@@ -12,15 +12,15 @@ git clone https://github.com/Shyy23/pet-house.git
 
 # 2. Masuk ke folder project
 
-cd pet-house
+`cd pet-house`
 
 # 3. Install Backend Dependencies
 
-composer install
+`composer install`
 
 # 4. Install Frontend Dependencies (Wajib untuk Vite/Tailwind)
 
-npm install
+`npm install`
 
 ### 2. Setup Environment
 
@@ -32,7 +32,7 @@ salin file `.env.example` dan ubah menjadi `.env`
 
 Setelah file `.env` berhasil dibuat, langkah selanjutnya adalah menghasilkan kunci aplikasi unik yang akan digunakan untuk enkripsi data:
 
-php artisan key:generate
+`php artisan key:generate`
 
 Perintah ini akan secara otomatis mengisi nilai `APP_KEY` di dalam file `.env` dengan string acak yang panjang dan aman. Kunci ini sangat penting untuk keamanan aplikasi Laravel Anda.
 
@@ -49,7 +49,6 @@ DB_PORT=3306
 DB_DATABASE=db_pet_house
 DB_USERNAME=root
 DB_PASSWORD=
-
 ```
 
 ### 4. Migrasi Data
@@ -81,13 +80,9 @@ Akses aplikasi di browser: http://127.0.0.1:8000
 🛠️ Troubleshooting (Jika Error)
 
 -   Jika tampilan berantakan / CSS tidak load:
-    • Hapus folder node_modules.
-    • Jalankan npm install.
-    • Jalankan npm run dev kembali.
+    • Hapus folder `node_modules`.
+    • Jalankan `npm install`.
+    • Jalankan `npm run dev` kembali.
 
 -   Jika error PHP / Class not found:
-    composer dump-autoload
-
-```
-
-```
+    `composer dump-autoload`
