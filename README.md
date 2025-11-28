@@ -1,28 +1,28 @@
-## 🛠️ Cara Instalasi (Clone dari GitHub)
+# 🛠️ Cara Instalasi
 
 Buka terminal di folder tujuan, lalu jalankan perintah berurutan:
 
-### 1. Clone & Install Dependensi
+## 1. Clone & Install Dependensi
 
 Jalankan perintah ini karena folder `vendor` dan `node_modules` tidak disertakan di GitHub:
 
-# 1. Clone Repository
+### 1. Clone Repository
 
 git clone https://github.com/Shyy23/pet-house.git
 
-# 2. Masuk ke folder project
+### 2. Masuk ke folder project
 
 `cd pet-house`
 
-# 3. Install Backend Dependencies
+### 3. Install Backend Dependencies
 
 `composer install`
 
-# 4. Install Frontend Dependencies (Wajib untuk Vite/Tailwind)
+### 4. Install Frontend Dependencies (Wajib untuk Vite/Tailwind)
 
 `npm install`
 
-### 2. Setup Environment
+## 2. Setup Environment
 
 Pada tahap ini, kita perlu membuat file konfigurasi lingkungan (.env) yang berisi pengaturan khusus untuk aplikasi kita. File .env sangat penting karena berisi informasi sensitif seperti koneksi database, kunci aplikasi, dan konfigurasi email yang tidak boleh dibagikan ke publik.
 
@@ -36,7 +36,7 @@ Setelah file `.env` berhasil dibuat, langkah selanjutnya adalah menghasilkan kun
 
 Perintah ini akan secara otomatis mengisi nilai `APP_KEY` di dalam file `.env` dengan string acak yang panjang dan aman. Kunci ini sangat penting untuk keamanan aplikasi Laravel Anda.
 
-### 3. Konfigurasi Database
+## 3. Konfigurasi Database
 
 Buat database kosong di phpMyAdmin bernama: `db_pet_house`.
 
@@ -51,7 +51,7 @@ DB_USERNAME=root
 DB_PASSWORD=
 ```
 
-### 4. Migrasi Data
+## 4. Migrasi Data
 
 Pilih salah satu cara di bawah ini untuk mengisi tabel:
 
@@ -60,7 +60,7 @@ Cara A (Recommended - via Terminal): Mengisi tabel dan data dummy otomatis.
 
 Cara B (Alternatif - via Import SQL): Import file `db_pet_house.sql` (tersedia di folder root) ke database `db_pet_house` melalui phpMyAdmin.
 
-### 5. Setup Storage Link
+## 5. Setup Storage Link
 
 Agar foto hewan yang diupload dapat tampil:
 `php artisan storage:link`
